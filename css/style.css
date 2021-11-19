@@ -15,7 +15,9 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-
+.underline {
+  text-decoration: underline;
+}
 /* Utilities */
 
 .container {
@@ -41,6 +43,7 @@ body {
 .col {
   float: left;
 }
+
 .blue-button {
   display: inline-block;
   background-color: #0061ff;
@@ -131,20 +134,99 @@ img {
 
 /* Spotlight content */
 
-div.col.sl-text p {
+div.col.spotlight-text p {
   display: inline-block;
   margin-bottom: 40px;
 }
 
-div.col.sl-text span {
+div.col.spotlight-text span {
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 50px;
 }
 
+/* Price content */
+
 #price {
   position: relative;
   padding: 0 20px;
+}
+
+/* Deals */
+
+/* Deals utilities */
+.w-30 {
+  width: calc(33% - 40px);
+  margin: 20px 20px;
   height: 800px;
-  /* background-color: black; */
+}
+.deal-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.light-border {
+  border: 1px solid #d0d0d3;
+}
+
+.single-team {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d3;
+}
+
+section.costs span:nth-last-child(1) {
+  color: #637381;
+}
+
+div.deal-container h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.costs {
+  line-height: 30px;
+}
+
+.info-icons {
+  display: inline-block;
+  width: 10%;
+}
+
+.info-text {
+  display: inline-block;
+  width: 90%;
+}
+
+.info {
+  display: flex;
+  height: 100px;
+  margin-top: 40px;
+}
+
+div.info-text span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.h-33 {
+  height: 33%;
+}
+
+section + a.blue-button.prova-gratis {
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.buy-now {
+  display: inline-block;
+  margin: 30px 0;
+}
+
+.w-20 {
+  width: 25%;
 }
