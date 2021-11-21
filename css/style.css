@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-.font-14px {
+.font-17px {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
 }
@@ -49,9 +49,8 @@ body {
   /* height: 500px; */
 }
 
-.blue-button {
+.button {
   display: inline-block;
-  background-color: #0061ff;
   padding: 0 10px;
   line-height: 30px;
   text-decoration: none;
@@ -59,6 +58,9 @@ body {
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+}
+.blue {
+  background-color: #0061ff;
 }
 .text-align {
   position: relative;
@@ -235,7 +237,7 @@ div.info-text span {
   height: 33%;
 }
 
-section.info + a.blue-button.prova-gratis {
+section.info + a.blue.button.prova-gratis {
   text-align: center;
   padding: 0 20px;
   margin-top: 40px;
@@ -290,7 +292,6 @@ i.fas.fa-check {
 /* Partner  --------------------------------------------*/
 .w-60 {
   width: calc(60% - 40px);
-  margin: 150px 20px;
 }
 
 .w-40 {
@@ -298,7 +299,12 @@ i.fas.fa-check {
   margin: 150px 20px;
 }
 
-.find-partner {
+#partner-img,
+#partner-desc {
+  margin: 150px 20px;
+}
+
+.black-white-button {
   color: black;
   background-color: white;
   border: 1px solid black;
@@ -343,6 +349,10 @@ div.col.w-30 img {
 .w-52 {
   width: calc(52%);
   margin: 20px 0;
+}
+
+.pad-100 {
+  padding: 0 100px;
 }
 
 .square {
@@ -391,4 +401,46 @@ div.square img {
 div.square:hover {
   position: relative;
   border: 20px solid rgba(255, 255, 255, 0.623);
+}
+
+div.col.w-52.pad-100 img {
+  width: 130px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.marg-40 {
+  margin-bottom: 40px;
+}
+
+#join-db {
+  background-color: #b4d0e7;
+  position: relative;
+  margin-top: -20px;
+}
+.display-ib {
+  display: inline-block;
+}
+
+div#join-db div.w-60.display-ib {
+  position: relative;
+}
+#bring-someone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #61082b;
+  font-weight: bolder;
+}
+
+#bring-button {
+  padding: 5px 60px;
+  margin-left: 40px;
+  border: none;
+}
+
+div#join-db div.w-40.display-ib {
+  text-align: justify;
 }
