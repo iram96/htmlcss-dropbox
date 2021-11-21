@@ -11,6 +11,10 @@
   content: "";
   clear: both;
 }
+.row {
+  margin: 0 -20px;
+  width: 100%;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -26,7 +30,7 @@ body {
 }
 
 .main-container {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -60,7 +64,7 @@ body {
   text-align: center;
 }
 
-/* Header */
+/* Header --------------------------------------------*/
 
 header {
   position: fixed;
@@ -99,7 +103,7 @@ img {
   line-height: 100px;
 }
 
-/* Spotlight */
+/* Spotlight --------------------------------------------*/
 
 .spotlight {
   height: 700px;
@@ -145,7 +149,7 @@ div.col.spotlight-text span {
   margin-bottom: 50px;
 }
 
-/* Price content ----------------------------------*/
+/* Price content --------------------------------------------*/
 
 #price {
   position: relative;
@@ -162,10 +166,15 @@ section#price div.main-container h2 {
   width: calc(33% - 40px);
   margin: 20px 20px;
 }
+.w-100 {
+  margin: 20px 20px;
+  height: 300px;
+}
 
 .deal-container {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 
 .light-border {
@@ -179,11 +188,14 @@ section#price div.main-container h2 {
   line-height: 40px;
   text-align: center;
   border-bottom: 1px solid #d0d0d3;
+  width: 100%;
 }
 
 div.deal-container h3 {
   margin-top: 40px;
   margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 section.costs span:nth-last-child(1) {
@@ -194,6 +206,10 @@ section.costs span:nth-last-child(1) {
   line-height: 30px;
 }
 
+.info {
+  display: flex;
+  margin-top: 40px;
+}
 .info-icons {
   display: inline-block;
   width: 10%;
@@ -202,11 +218,6 @@ section.costs span:nth-last-child(1) {
 .info-text {
   display: inline-block;
   width: 90%;
-}
-
-.info {
-  display: flex;
-  margin-top: 40px;
 }
 
 div.info-text span {
@@ -265,3 +276,45 @@ i.fas.fa-check {
   top: 3px;
   color: #0061ff;
 }
+
+.uff-vendite {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 240px;
+  height: 30px;
+  text-align: center;
+}
+
+/* Partner  --------------------------------------------*/
+.w-60 {
+  width: calc(60% - 40px);
+  margin: 150px 20px;
+}
+
+.w-40 {
+  width: calc(40% - 40px);
+  margin: 150px 20px;
+}
+
+.find-partner {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+div.col.w-40 h3 {
+  margin: 30px 0;
+}
+
+div.col.w-40 p {
+  margin-bottom: 30px;
+}
+
+#partner {
+  position: relative;
+  padding: 0 20px;
+}
+
+/*  */
