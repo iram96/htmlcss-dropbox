@@ -346,6 +346,7 @@ div.col.w-30 img {
 }
 
 .square {
+  transition: 1s;
   position: relative;
   height: 228.36px;
   text-align: center;
@@ -356,6 +357,27 @@ div.col.w-30 img {
 .designit-box {
   background-color: #a2d39b;
 }
+.uf-florida-box {
+  background-color: #0093ce;
+}
+.asu-box {
+  background-color: #61082b;
+}
+.topps-box {
+  background-color: #ff1c1c;
+}
+.wbr-box {
+  background-color: #d5001f;
+}
+.lonelyp-box {
+  background-color: #0d2481;
+}
+.hearts-box {
+  background-color: #b4d0e7;
+}
+.cco-box {
+  background-color: #ffd830;
+}
 
 div.square img {
   filter: invert(1);
@@ -363,9 +385,10 @@ div.square img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 130px;
 }
 
-.uf-florida {
-  background-color: #0093ce;
+div.square:hover {
+  position: relative;
+  border: 20px solid rgba(255, 255, 255, 0.623);
 }
