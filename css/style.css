@@ -145,21 +145,24 @@ div.col.spotlight-text span {
   margin-bottom: 50px;
 }
 
-/* Price content */
+/* Price content ----------------------------------*/
 
 #price {
   position: relative;
   padding: 0 20px;
 }
-
+/* Title */
+section#price div.main-container h2 {
+  margin-top: 200px;
+}
 /* Deals */
 
-/* Deals utilities */
+/* Deals Utilities */
 .w-30 {
   width: calc(33% - 40px);
   margin: 20px 20px;
-  height: 800px;
 }
+
 .deal-container {
   width: 80%;
   margin: 0 auto;
@@ -169,20 +172,22 @@ div.col.spotlight-text span {
   border: 1px solid #d0d0d3;
 }
 
-.single-team {
+/* Col Content */
+
+.client-type {
   height: 40px;
   line-height: 40px;
   text-align: center;
   border-bottom: 1px solid #d0d0d3;
 }
 
-section.costs span:nth-last-child(1) {
-  color: #637381;
-}
-
 div.deal-container h3 {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+section.costs span:nth-last-child(1) {
+  color: #637381;
 }
 
 .costs {
@@ -201,21 +206,24 @@ div.deal-container h3 {
 
 .info {
   display: flex;
-  height: 100px;
   margin-top: 40px;
 }
 
 div.info-text span {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
+}
+
+.marg-10 {
+  margin-bottom: 10px;
 }
 
 .h-33 {
   height: 33%;
 }
 
-section + a.blue-button.prova-gratis {
+section.info + a.blue-button.prova-gratis {
   text-align: center;
   padding: 0 20px;
   margin-top: 40px;
@@ -227,6 +235,33 @@ section + a.blue-button.prova-gratis {
   margin: 30px 0;
 }
 
-.w-20 {
+.w-25 {
   width: 25%;
+}
+
+div.col.w-30.light-border div.deal-container hr + h4 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+div.col.w-30.light-border div.deal-container h4 + ul {
+  list-style-position: none;
+  margin-bottom: 150px;
+}
+
+.plane-points {
+  position: relative;
+  display: block;
+  padding-left: 1em;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+
+i.fas.fa-check {
+  position: absolute;
+  display: inline-block;
+  left: -3px;
+  top: 3px;
+  color: #0061ff;
 }
