@@ -15,6 +15,7 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+
 .underline {
   text-decoration: underline;
 }
@@ -38,7 +39,10 @@ body {
 }
 .col {
   float: left;
-  /* height: 500px; */
+}
+
+.vis-hid {
+  visibility: hidden;
 }
 .display-ib {
   display: inline-block;
@@ -49,7 +53,9 @@ body {
 .text-center {
   text-align: center;
 }
-
+.lh-30px {
+  line-height: 30px;
+}
 .font-17px {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
@@ -62,7 +68,7 @@ body {
   font-size: 40px;
 }
 .font-white {
-  color: whites;
+  color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -73,17 +79,23 @@ body {
 .font-wgt700 {
   font-weight: 700;
 }
-/* .font-wgt400 {
-  font-weight: 400;
-} */
-
+.underline-grey {
+  text-decoration: 2px underline #808080;
+}
 .light-border {
   border: 1px solid #d0d0d3;
+}
+.underline-cc {
+  text-decoration: underline;
 }
 
 .row {
   width: 100%;
 }
+.marg-0-auto {
+  margin: 0 auto;
+}
+
 .marg-neg50 {
   margin: 0 -60px;
 }
@@ -99,14 +111,17 @@ body {
 .marg-bot30 {
   margin-bottom: 30px;
 }
+.marg-bot20 {
+  margin-bottom: 20px;
+}
 .marg-bot10 {
   margin-bottom: 10px;
 }
-.marg-20-50 {
-  margin: 20px 60px;
-}
 .marg-0-30 {
   margin: 0 30px;
+}
+.marg-side60 {
+  margin: 0 60px;
 }
 .marg-top200 {
   margin-top: 200px;
@@ -126,8 +141,12 @@ body {
 .pad-100 {
   padding: 0 100px;
 }
+
 .pad-20 {
   padding: 0 20px;
+}
+.h-100 {
+  height: 100px;
 }
 .h-33 {
   height: 33%;
@@ -163,8 +182,18 @@ body {
 .w-90 {
   width: 90%;
 }
+.w-95 {
+  width: 95%;
+}
 .w-calc100 {
   width: calc(100%-100px);
+}
+
+.blue.button:hover {
+  filter: brightness(120%);
+}
+.black-white-button:hover {
+  filter: brightness(85%);
 }
 
 .button {
@@ -320,10 +349,10 @@ div.position-rel.user-type i.user-type-icon {
   transform: translate(0, -50%);
 }
 
-div.deal-container h3 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 20px;
+.plan-name {
+  /* margin-top: 40px;
+  margin-bottom: 20px; */
+  font-size: 25px;
   font-weight: 900;
 }
 
@@ -339,16 +368,6 @@ section.costs span:nth-last-child(1) {
   display: flex;
   margin-top: 40px;
 }
-/* .info-icons {
-  display: inline-block;
-  width: 10%;
-}
-
-.info-text {
-  display: inline-block;
-  width: 90%;
-} */
-
 .info-points {
   position: relative;
   display: block;
@@ -356,25 +375,6 @@ section.costs span:nth-last-child(1) {
   font-weight: 600;
   margin: 15px 0px;
 }
-
-/* i.far.fa-user {
-  position: absolute;
-  display: inline-block;
-  left: -3px;
-  top: 5px;
-}
-i.far.fa-folder {
-  position: absolute;
-  display: inline-block;
-  left: -3px;
-  top: 5px;
-}
-i.fas.fa-pencil-alt {
-  position: absolute;
-  display: inline-block;
-  left: -3px;
-  top: 5px;
-} */
 
 i.icon-side-pos {
   position: absolute;
@@ -416,9 +416,6 @@ div.col.w-30.light-border div.deal-container h4 + ul {
   font-weight: 600;
   margin: 15px 0px;
 }
-
-/* Col bottom */
-
 i.fas.fa-check {
   position: absolute;
   display: inline-block;
@@ -427,11 +424,13 @@ i.fas.fa-check {
   color: #0061ff;
 }
 
+/* Col bottom */
+
 .uff-vendite {
   position: absolute;
-  right: -40px;
+  right: 0;
   top: 0;
-  width: 240px;
+  width: 400px;
   height: 30px;
   text-align: center;
 }
@@ -525,7 +524,7 @@ div.square img {
 
 div.square:hover {
   position: relative;
-  border: 20px solid rgba(255, 255, 255, 0.623);
+  border: 15px solid rgba(255, 255, 255, 0.623);
 }
 
 div.col.w-52.pad-100 img {
@@ -603,6 +602,7 @@ footer {
   font-weight: 200;
 }
 
+li.footer-link a:link,
 li.footer-link a:visited {
   color: white;
 }
