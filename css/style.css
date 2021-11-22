@@ -30,29 +30,6 @@ body {
   margin: 0 auto;
 }
 
-.display-ib {
-  display: inline-block;
-}
-
-.font-17px {
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-}
-.font-white {
-  color: white;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-
-.font-black {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-.light-border {
-  border: 1px solid #d0d0d3;
-}
-
 .position-rel {
   position: relative;
 }
@@ -63,29 +40,76 @@ body {
   float: left;
   /* height: 500px; */
 }
+.display-ib {
+  display: inline-block;
+}
+.display-b {
+  display: block;
+}
+.text-center {
+  text-align: center;
+}
+
+.font-17px {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+.font-16px {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.font-40px {
+  font-size: 40px;
+}
+.font-white {
+  color: whites;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.font-black {
+  color: black;
+  font-weight: 500;
+}
+.font-wgt700 {
+  font-weight: 700;
+}
+/* .font-wgt400 {
+  font-weight: 400;
+} */
+
+.light-border {
+  border: 1px solid #d0d0d3;
+}
+
 .row {
   width: 100%;
 }
 .marg-neg50 {
   margin: 0 -60px;
 }
-.marg-150 {
+.marg-bot150 {
   margin-bottom: 150px;
 }
-.marg-100 {
+.marg-bot100 {
   margin-bottom: 100px;
 }
-.marg-40 {
+.marg-bot40 {
   margin-bottom: 40px;
 }
-.marg-30 {
+.marg-bot30 {
   margin-bottom: 30px;
 }
-.marg-10 {
+.marg-bot10 {
   margin-bottom: 10px;
 }
 .marg-20-50 {
   margin: 20px 60px;
+}
+.marg-0-30 {
+  margin: 0 30px;
+}
+.marg-top200 {
+  margin-top: 200px;
 }
 .marg-top150 {
   margin-top: 150px;
@@ -93,12 +117,27 @@ body {
 .marg-top100 {
   margin-top: 100px;
 }
+.marg-top50 {
+  margin-top: 50px;
+}
+.marg-top40 {
+  margin-top: 40px;
+}
+.pad-100 {
+  padding: 0 100px;
+}
+.pad-20 {
+  padding: 0 20px;
+}
 .h-33 {
   height: 33%;
 }
-.w-30 {
-  width: calc(33.33% - 120px);
-  margin: 20px 60px;
+.w-10 {
+  width: 10%;
+}
+.w-12 {
+  width: calc(12%);
+  margin: 20px 0;
 }
 .w-20 {
   width: 20%;
@@ -106,20 +145,23 @@ body {
 .w-25 {
   width: 25%;
 }
-.w-60 {
-  width: calc(60% - 40px);
+.w-30 {
+  width: calc(33.33% - 120px);
+  margin: 20px 60px;
 }
 .w-40 {
   width: calc(40% - 40px);
   margin: 150px 20px;
 }
-.w-12 {
-  width: calc(12%);
-  margin: 20px 0;
-}
 .w-52 {
   width: calc(52%);
   margin: 20px 0;
+}
+.w-60 {
+  width: calc(60% - 40px);
+}
+.w-90 {
+  width: 90%;
 }
 .w-calc100 {
   width: calc(100%-100px);
@@ -127,7 +169,6 @@ body {
 
 .button {
   display: inline-block;
-  padding: 0 10px;
   line-height: 30px;
   text-decoration: none;
   color: white;
@@ -142,16 +183,6 @@ body {
   position: relative;
   text-align: center;
 }
-
-/* Header --------------------------------------------*/
-
-header {
-  position: fixed;
-  background-color: white;
-  height: 100px;
-  width: 100%;
-  z-index: 1;
-}
 ul {
   display: inline-block;
   list-style-type: none;
@@ -164,7 +195,17 @@ li {
 a {
   text-decoration: none;
 }
-img {
+
+/* Header --------------------------------------------*/
+
+header {
+  position: fixed;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+}
+img[title^="dropbox"] {
   vertical-align: middle;
 }
 
@@ -185,7 +226,7 @@ img {
 /* Spotlight --------------------------------------------*/
 
 .spotlight {
-  height: 700px;
+  height: 850px;
   background-color: #b4d0e7;
   padding: 0 20px;
   position: relative;
@@ -198,19 +239,20 @@ img {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  font-size: 60px;
-  margin-top: 130px;
-  font-weight: bolder;
+  font-size: 80px;
+  font-weight: 700;
 }
 
 .spotlight-text {
   width: calc(30% - 50px);
   margin-top: 50px;
   margin-right: 50px;
+  position: relative;
 }
 
 .spotlight-img {
   width: calc(70% - 50px);
+
   margin-top: 50px;
   margin-left: 50px;
 }
@@ -228,16 +270,21 @@ div.col.spotlight-text span {
   margin-bottom: 50px;
 }
 
+.arrow-down-spotlight {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  font-size: 40px;
+}
+
 /* Price content --------------------------------------------*/
 
 #price {
   position: relative;
   padding: 0 20px;
 }
-/* Title */
-section#price div.main-container h2 {
-  margin-top: 200px;
-}
+
 /* Deals */
 
 /* Deals Utilities */
@@ -256,6 +303,21 @@ section#price div.main-container h2 {
   text-align: center;
   border-bottom: 1px solid #d0d0d3;
   width: 100%;
+}
+.user-type {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 100px;
+}
+
+div.position-rel.user-type i.user-type-icon {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 div.deal-container h3 {
@@ -277,7 +339,7 @@ section.costs span:nth-last-child(1) {
   display: flex;
   margin-top: 40px;
 }
-.info-icons {
+/* .info-icons {
   display: inline-block;
   width: 10%;
 }
@@ -285,9 +347,43 @@ section.costs span:nth-last-child(1) {
 .info-text {
   display: inline-block;
   width: 90%;
+} */
+
+.info-points {
+  position: relative;
+  display: block;
+  padding-left: 1.2em;
+  font-weight: 600;
+  margin: 15px 0px;
 }
 
-div.info-text span {
+/* i.far.fa-user {
+  position: absolute;
+  display: inline-block;
+  left: -3px;
+  top: 5px;
+}
+i.far.fa-folder {
+  position: absolute;
+  display: inline-block;
+  left: -3px;
+  top: 5px;
+}
+i.fas.fa-pencil-alt {
+  position: absolute;
+  display: inline-block;
+  left: -3px;
+  top: 5px;
+} */
+
+i.icon-side-pos {
+  position: absolute;
+  display: inline-block;
+  left: -3px;
+  top: 3px;
+}
+
+div.w-90.display-b span {
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
@@ -295,9 +391,6 @@ div.info-text span {
 
 section.info + a.blue.button.prova-gratis {
   text-align: center;
-  padding: 0 20px;
-  margin-top: 40px;
-  width: 100%;
 }
 
 .buy-now {
@@ -315,7 +408,7 @@ div.col.w-30.light-border div.deal-container h4 + ul {
   margin-bottom: 150px;
 }
 
-.plane-points {
+.plan-points {
   position: relative;
   display: block;
   padding-left: 1em;
@@ -385,10 +478,6 @@ div.col.w-30 img {
 #dropbox-business-clients {
   position: relative;
   margin-top: 200px;
-}
-
-.pad-100 {
-  padding: 0 100px;
 }
 
 .square {

@@ -9,7 +9,7 @@
     <link rel="icon" href="img/icon2.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Drop-Box</title>
 </head>
@@ -34,7 +34,7 @@
             <div class="col rside clearfix">
                 <ul>
                     <li class="marg-0-30">
-                        <a class="font-17px font-weight-200 font-black" href="">Supporto</a>
+                        <a class="font-17px font-black" href="">Supporto</a>
                     </li> 
                     <li class="marg-0-30">
                         <a class="font-17px font-black" href="">Contatta l'ufficio vendite</a>
@@ -44,7 +44,7 @@
                     </li>
                 </ul>
                 <span class="text-align">
-                    <a class="blue button" href="#">Inizia</a>
+                    <a class="blue button pad-20" href="#">Inizia</a>
                 </span>
             </div>
 
@@ -55,11 +55,11 @@
     <main>
         <section class="spotlight">
             <div class="main-container">
-                <h1>Tutto ci&ograve; che ti serve per il lavoro, <br> in un unico posto</h1>
+                <h1 class="marg-top150">Tutto ci&ograve; che ti serve per il lavoro, <br> in un unico posto</h1>
                     
-                <div class="col spotlight-text">
+                <div class="col spotlight-text font-black">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam sit temporibus sed deserunt blanditiis inventore eligendi similique ex ea eveniet distinctio pariatur voluptate placeat est quisquam ullam, libero possimus!</p>                          
-                    <a class="blue button" href="#">Inizia la prova gratuita</a>
+                    <a class="blue button pad-20" href="#">Inizia la prova gratuita</a>
                    
                     <span>Annulla in qualsiasi momento</span>
                     <i class="fas fa-arrow-down arrow-down-spotlight"></i>
@@ -71,7 +71,7 @@
 
         <section id="price">
             <div class="main-container">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est suscipit obcaecati ipsam! </h2>
+                <h2 class="marg-top200 marg-bot100 font-black font-40px font-wgt700">Trova il piano Dropbox Business che fa per te</h2>
                 <!-- <label for="each-year">
                     <input id="each-year" type="radio">
                     Fatturazione annua
@@ -88,8 +88,11 @@
                     <div class="row clearfix">
                         <div class="col w-30 light-border professionale">
                             <div class="client-type">
-                                <span><i class="far fa-user"></i></span>
-                                Singolo
+                                <div class="position-rel user-type">
+
+                                    <i class="icon-side-pos far fa-user user-type-icon"></i><span>Singolo</span>
+                                </div>
+                                
                             </div>
     
                             <div class="deal-container">
@@ -97,22 +100,25 @@
                                     Professional
                                 </h3>
                                 <section class="costs">
-                                    <span class=" font-black"> 19,99 &euro;</span> <br>
+                                    <span class=" font-black font-wgt700"> 19,99 &euro;</span> <br>
                                     <span >/month</span>
                                 </section>
     
                                 <section class="info">
-                                    <div class="info-icons">
-    
-                                    </div>
-                                    <div class="info-text">
-                                        <span class="marg-bot10 h-33">1 Utente</span>
-                                        <span class="marg-bot10 h-33">3TB di spazio di archiviazione sicuro</span>
-                                        <span class="marg-bot10 h-33">Funzioni di produtività premium e condivisione file semplice e sicura</span>
-                                    </div>
+                                    <ul>
+                                        <li class="info-points ">
+                                            <i class="far fa-user icon-side-pos"></i><span class="font-black font-16px">1 Utente</span> 
+                                        </li>
+                                        <li class="info-points">
+                                            <i class="far fa-folder icon-side-pos"></i><span class="font-black font-16px">3TB di spazio di archiviazione sicuro</span>
+                                        </li>
+                                        <li class="info-points">
+                                            <i class="fas fa-pencil-alt icon-side-pos"></i><span class="font-black font-16px">Funzioni di produtività premium e condivisione file semplice e sicura</span>
+                                        </li>
+                                    </ul>
                                     
                                 </section>
-                                <a class="blue button prova-gratis" href="#">Prova gratis 30 giorni</a>
+                                <a class="blue button prova-gratis pad-20 marg-top40 row  " href="#">Prova gratis 30 giorni</a>
     
                                 <span class="buy-now">oppure <a class="underline" href="#">acquista ora</a></span>
                                 <hr class="light-border w-25">
@@ -120,11 +126,11 @@
                                     Punti salienti del piano
                                 </h4>
                                 <ul>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Inviare File a 100 GB con Dropbox Transfer</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>cartella offline sui dispositivi mobili</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>pulizia remota dell'account</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Filigrana documento</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Assistenza prioritaria via email e chat</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Inviare File a 100 GB con Dropbox Transfer</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>cartella offline sui dispositivi mobili</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>pulizia remota dell'account</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Filigrana documento</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Assistenza prioritaria via email e chat</li>
                                     
                                 </ul>
     
@@ -138,8 +144,10 @@
     
                         <div class="col w-30 light-border standard">
                             <div class="client-type">
-                                <i></i>
-                                Singolo
+                                <div class="position-rel user-type">
+
+                                    <i class="icon-side-pos far fa-building user-type-icon"></i></i><span>Team</span>
+                                </div>
                             </div>
     
                             <div class="deal-container">
@@ -147,22 +155,25 @@
                                     Professional
                                 </h3>
                                 <section class="costs">
-                                    <span class=" font-black"> 19,99 &euro;</span> <br>
+                                    <span class=" font-black font-wgt700"> 19,99 &euro;</span> <br>
                                     <span >/month</span>
                                 </section>
     
                                 <section class="info">
-                                    <div class="info-icons">
-    
-                                    </div>
-                                    <div class="info-text">
-                                        <span class="h-33">1 Utente</span>
-                                        <span class="h-33">3TB di spazio di archiviazione sicuro</span>
-                                        <span class="h-33">Funzioni di produtività premium e condivisione file semplice e sicura</span>
-                                    </div>
+                                    <ul>
+                                        <li class="info-points ">
+                                            <i class="fas fa-user-plus icon-side-pos"></i><span class="font-black font-16px">1 Utente</span> 
+                                        </li>
+                                        <li class="info-points">
+                                            <i class="far fa-folder icon-side-pos"></i><span class="font-black font-16px">3TB di spazio di archiviazione sicuro</span>
+                                        </li>
+                                        <li class="info-points">
+                                            <i class="far fa-smile icon-side-pos"></i></i><span class="font-black font-16px">Funzioni di produtività premium e condivisione file semplice e sicura</span>
+                                        </li>
+                                    </ul>
                                     
                                 </section>
-                                <a class="blue button prova-gratis" href="#">Prova gratis 30 giorni</a>
+                                <a class="blue button prova-gratis pad-20 marg-top40 row  " href="#">Prova gratis 30 giorni</a>
     
                                 <span class="buy-now">oppure <a class="underline" href="#">acquista ora</a></span>
                                 <hr class="light-border w-25">
@@ -170,11 +181,11 @@
                                     Punti salienti del piano
                                 </h4>
                                 <ul>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Inviare File fino a 100 GB con Dropbox Transfer</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>cartella offline sui dispositivi mobili</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>pulizia remota dell'account</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Filigrana documento</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Assistenza prioritaria via email e chat</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Inviare File fino a 100 GB con Dropbox Transfer</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>cartella offline sui dispositivi mobili</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>pulizia remota dell'account</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Filigrana documento</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Assistenza prioritaria via email e chat</li>
                                     
                                 </ul>
     
@@ -185,8 +196,10 @@
     
                         <div class="col w-30 light-border advanced">
                             <div class="client-type">
-                                <i></i>
-                                Singolo
+                                <div class="position-rel user-type">
+
+                                    <i class="icon-side-pos far fa-building user-type-icon"></i></i><span>Team</span>
+                                </div>
                             </div>
     
                             <div class="deal-container">
@@ -194,22 +207,25 @@
                                     Professional
                                 </h3>
                                 <section class="costs">
-                                    <span class=" font-black"> 19,99 &euro;</span> <br>
+                                    <span class=" font-black  font-wgt700"> 19,99 &euro;</span> <br>
                                     <span >/month</span>
                                 </section>
     
                                 <section class="info">
-                                    <div class="info-icons">
-    
-                                    </div>
-                                    <div class="info-text">
-                                        <span class="h-33">1 Utente</span>
-                                        <span class="h-33">3TB di spazio di archiviazione sicuro</span>
-                                        <span class="h-33">Funzioni di produtività premium e condivisione file semplice e sicura</span>
-                                    </div>
+                                    <ul>
+                                        <li class="info-points ">
+                                            <i class="fas fa-user-plus icon-side-pos"></i><span class="font-black font-16px">1 Utente</span> 
+                                        </li>
+                                        <li class="info-points">
+                                            <i class="far fa-smile icon-side-pos"></i><span class="font-black font-16px">3TB di spazio di archiviazione sicuro</span>
+                                        </li>
+                                        <li class="info-points">
+                                            <i class="fas fa-pencil-alt icon-side-pos"></i><span class="font-black font-16px">Funzioni di produtività premium e condivisione file semplice e sicura</span>
+                                        </li>
+                                    </ul>
                                     
                                 </section>
-                                <a class="blue button prova-gratis" href="#">Prova gratis 30 giorni</a>
+                                <a class="blue button prova-gratis pad-20 marg-top40 row" href="#">Prova gratis 30 giorni</a>
     
                                 <span class="buy-now">oppure <a class="underline" href="#">acquista ora</a></span>
                                 <hr class="light-border w-25">
@@ -217,11 +233,11 @@
                                     Punti salienti del piano
                                 </h4>
                                 <ul>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Inviare File fino a 100 GB con Dropbox Transfer</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>cartella offline sui dispositivi mobili</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>pulizia remota dell'account</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Filigrana documento</li>
-                                    <li class="plane-points"><i class="fas fa-check"></i>Assistenza prioritaria via email e chat</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Inviare File fino a 100 GB con Dropbox Transfer</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>cartella offline sui dispositivi mobili</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>pulizia remota dell'account</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Filigrana documento</li>
+                                    <li class="plan-points"><i class="fas fa-check"></i>Assistenza prioritaria via email e chat</li>
                                     
                                 </ul>
     
@@ -237,8 +253,10 @@
     
                             <div class="marg-20-50 light-border w-calc100" id="enterprise">
                                 <div class="client-type">
-                                    <span><i class="far fa-user"></i></span>
-                                    Team
+                                    <div class="position-rel user-type">
+
+                                        <i class="icon-side-pos far fa-building user-type-icon"></i></i><span>Team</span>
+                                    </div>
                                 </div>
                                 <div class="deal-container">
                                     <h3 class=" font-black">
