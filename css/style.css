@@ -84,6 +84,9 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
+.font-grey {
+  color: #999999;
+}
 .font-black {
   color: black;
   font-weight: 500;
@@ -295,10 +298,6 @@ div.option-tendina span {
 .spotlight h1 {
   display: inline-block;
   width: 100%;
-  /* position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   font-size: 80px;
   font-weight: 700;
 }
@@ -483,14 +482,6 @@ i.fas.fa-check {
   font-weight: 600;
 }
 
-div.col.w-40 h3 {
-  margin: 30px 0;
-}
-
-div.col.w-40 p {
-  margin-bottom: 30px;
-}
-
 #partner {
   position: relative;
   padding: 0 20px;
@@ -650,7 +641,4 @@ li.footer-link a:visited {
 }
 div.country span {
   font-weight: 200;
-}
-.font-grey {
-  color: #999999;
 }
