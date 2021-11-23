@@ -56,6 +56,9 @@ body {
 .v-a-bottom {
   vertical-align: bottom;
 }
+.v-a-middle {
+  vertical-align: middle;
+}
 .underline {
   text-decoration: underline;
 }
@@ -104,8 +107,10 @@ body {
 .marg-0-auto {
   margin: 0 auto;
 }
-
-.marg-neg50 {
+.marg-tbneg20 {
+  margin: -20px 0;
+}
+.marg-neg60 {
   margin: 0 -60px;
 }
 .marg-bot150 {
@@ -228,9 +233,6 @@ ul {
   list-style-type: none;
   vertical-align: middle;
 }
-li {
-  display: inline;
-}
 
 a {
   text-decoration: none;
@@ -271,9 +273,14 @@ img[title^="dropbox"] {
 li.tendina:hover .box-tendina {
   display: block;
 }
-.option-tendina:hover {
+.option-tendina:hover span {
   filter: brightness(80%);
   background-color: white;
+}
+
+div.option-tendina span {
+  line-height: 40px;
+  width: 100%;
 }
 
 /* Spotlight --------------------------------------------*/
